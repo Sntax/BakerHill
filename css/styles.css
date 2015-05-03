@@ -1,0 +1,55 @@
+/* ===================================================== */
+/* Component:                          Global stylesheet */
+/* Project Name:                      Baker Hill Digital */
+/* Project URL:                 www.bakerhilldigital.com */
+/* Author(s):       Andrew Hill - andrewjrhill@gmail.com */
+/* ===================================================== */
+
+/* ------- */
+/* Globals */
+/* ------- */
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #FFF;
+  font-family: "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 100;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #8EC63F;
+}
+
+
+/* ---------- */
+/* Navigation */
+/* ---------- */
+
+
+/* ------ */
+/* Header */
+/* ------ */
+
+
+/* ----- */
+/* About */
+/* ----- */
+
+
+/* -------- */
+/* Services */
+/* -------- */
+
+
+/* ------- */
+/* Contact */
+/* ------- */
+
+
+/* ------ */
+/* Footer */
+/* ------ */
