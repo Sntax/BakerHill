@@ -9,10 +9,12 @@
 /* Globals */
 /* ------- */
 
-body,
-html {
+* {
   margin: 0;
   padding: 0;
+}
+body,
+html {
   background-color: #FFF;
   font-family: "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-weight: 100;
@@ -21,23 +23,95 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #8EC63F;
+  color: #fff;
+}
+
+a.button-light {
+  color: #ff0051;
+  background-color: #fff;
+  font-weight: 400;
+  padding: 20px 40px;
+  cursor: pointer;
+  text-align: center;
 }
 
 
 /* ---------- */
 /* Navigation */
 /* ---------- */
+nav.global-nav {
+  color: #fff;
+}
 
 
 /* ------ */
 /* Header */
 /* ------ */
+section.page-header {
+  clear: both;
+  background: url(../img/background-bw.jpg) no-repeat center center fixed; 
+  background-color: #fff;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+}
+
+div.logo {
+  position: relative;
+  overflow: hidden;
+  top: 10vh;
+  left: 10vh;
+  width: 250px;
+}
+div.logo h1.logo-home {
+  text-transform: uppercase;
+  position: relative;
+  font-size: 18px;
+  color: #ff0051;
+  padding: 31px 0;
+  left: 250px;
+  top: -83px;
+}
+div.logo h1.logo-text {
+  position: relative;
+  left: 0;
+}
+div.logo h1 {
+  background-color: #ff0051;
+  width: 250px;
+  text-align: center;
+  font-family: "Ubuntu";
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 38px;
+  padding: 20px 0;
+}
+
+h2.tagline {
+  width: 40vw;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 46px;
+  margin: 10% auto 0 auto;
+}
+
+a.page-header-button {
+  margin: 150px auto 0 auto;
+  width: 100px;
+  display: block;
+}
 
 
-/* ----- */
+/* ------ */
 /* About */
 /* ----- */
+section.page-about {
+  clear: both;
+  height: 400px;
+}
 
 
 /* -------- */
