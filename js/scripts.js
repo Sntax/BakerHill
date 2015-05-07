@@ -32,11 +32,15 @@ var bakerHill = {
       function() {
         logoText.animate({
           left: 0
-        }, 400);
+        }, 400, function(){
+          $(this).removeAttr('style');
+        });
         logoHome.animate({
           left: 250,
           color: '#ff0051'
-        }, 400);
+        }, 400, function(){
+          $(this).removeAttr('style');
+        });
       }
     )
   },
@@ -44,7 +48,7 @@ var bakerHill = {
   buttonFade: function() {
     $('.button-light').mouseover(
       function() {
-        $(this).animate({
+        $(this).stop().animate({
           backgroundColor: '#ff0051',
           color: '#fff',
           width: '115px'
@@ -52,11 +56,13 @@ var bakerHill = {
       }
     ).mouseout(
       function() {
-        $(this).animate({
+        $(this).stop().animate({
           backgroundColor: '#fff',
           color: '#ff0051',
           width: '100px'
-        }, 250);
+        }, 250, function(){
+          $(this).removeAttr('style');
+        });
       }
     );
   }

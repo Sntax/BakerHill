@@ -35,6 +35,40 @@ a.button-light {
   text-align: center;
 }
 
+section.page {
+  width: 1000px;
+  margin: 0 auto;
+  font-family: 'Droid Serif', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  color: #393939;
+  clear: both;
+  padding: 100px 0;
+}
+
+span.blurb {
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #ff0051;
+  letter-spacing: 3px;
+  text-align: center;
+  display: block;
+  font-weight: 600;
+}
+h1.heading {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+h2.tagline {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 200;
+}
+p.details {
+  font-family: "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 400;
+}
+
 
 /* ---------- */
 /* Navigation */
@@ -47,10 +81,11 @@ nav.global-nav {
 /* ------ */
 /* Header */
 /* ------ */
-section.page-header {
+section.header {
   clear: both;
+  display: inline-block;
   background: url(../img/background-bw.jpg) no-repeat center center fixed; 
-  background-color: #fff;
+  background-color: #303030;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -61,10 +96,10 @@ section.page-header {
 }
 
 div.logo {
-  position: relative;
+  position: fixed;
   overflow: hidden;
-  top: 10vh;
-  left: 10vh;
+  top: 10%;
+  left: 5%;
   width: 250px;
 }
 div.logo h1.logo-home {
@@ -91,11 +126,13 @@ div.logo h1 {
   padding: 20px 0;
 }
 
-h2.tagline {
-  width: 40vw;
-  font-family: 'Varela Round', sans-serif;
+h2.feature-text {
+  width: 50vw;
+  font-family: 'Droid Serif', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-size: 46px;
-  margin: 10% auto 0 auto;
+  margin: 20% auto 0 auto;
+  letter-spacing: 3px;
+  text-align: center;
 }
 
 a.page-header-button {
@@ -108,11 +145,14 @@ a.page-header-button {
 /* ------ */
 /* About */
 /* ----- */
-section.page-about {
-  clear: both;
-  height: 400px;
+section.page.about h2 {
+  margin-bottom: 80px;
 }
-
+section.page.about p.details {
+  margin-bottom: 15px;
+  text-align: center;
+  width: 100%
+}
 
 /* -------- */
 /* Services */
