@@ -10,7 +10,7 @@ var bakerHill = {
   init: function() {
     bakerHill.logoSlide();
     bakerHill.buttonFade();
-    // bakerHill.featureFade();
+    bakerHill.smoothScroll();
   },
 
   logoSlide: function() {
@@ -44,33 +44,6 @@ var bakerHill = {
         });
       }
     }, logoText);
-
-    // logoText.mouseover(
-    //   function() {
-    //     logoText.animate({
-    //       left: -250
-    //     }, 400);
-    //     logoHome.animate({
-    //       left: 0,
-    //       color: '#fff'
-    //     }, 400);
-    //   }
-    // )
-    // logoHome.mouseout(
-    //   function() {
-    //     logoText.animate({
-    //       left: 0
-    //     }, 400, function(){
-    //       $(this).removeAttr('style');
-    //     });
-    //     logoHome.animate({
-    //       left: 250,
-    //       color: '#ff0051'
-    //     }, 400, function(){
-    //       $(this).removeAttr('style');
-    //     });
-    //   }
-    // )
   },
 
   buttonFade: function() {
@@ -95,21 +68,20 @@ var bakerHill = {
     );
   },
 
-  featureFade: function(){
-    $(window).scroll( function(){
-      $('.feature-overlay').each( function(i){
-        var bottom_of_object = $(this).position().top + $(this).outerHeight();
-        var bottom_of_window = $(window).scrollTop() + $(window).height();
-        
-        /* Adjust the "200" to either have a delay or that the content starts fading a bit before you reach it  */
-        bottom_of_window = bottom_of_window + 200;  
-      
-        if( bottom_of_window > bottom_of_object ){
-          $(this).animate({'opacity':'1'},500);
-        } else if( bottom_of_window < bottom_of_object ){
-          $(this).animate({'opacity':'0'},500);
-        }
-      }); 
+  smoothScroll: function() {
+
+    $('.smooth-scroll').on('click', function() {
+
+      var clickedLink = $(this);
+      var destination = clickedLink.data();
+      var toString = JSON.stringify(destination);
+      var secondString = toString.replace('{"loc":"', '');
+      var finalString = secondString.replace('"}', '');
+      var element = document.getElementById(finalString);
+
+      $('html, body').animate({
+      scrollTop: $(element).offset().top
+      }, 800);
     });
   }
 };
