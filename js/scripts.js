@@ -8,41 +8,69 @@
 var bakerHill = {
 
   init: function() {
-    bakerHill.logoFade();
+    bakerHill.logoSlide();
     bakerHill.buttonFade();
+    // bakerHill.featureFade();
   },
 
-  logoFade: function() {
+  logoSlide: function() {
 
     var logoText = $('div.logo h1.logo-text');
     var logoHome = $('div.logo h1.logo-home');
 
-    logoText.mouseover(
-      function() {
-        logoText.animate({
+    $('.feature-overlay').hide();
+
+    $('div.logo').on({
+      mouseenter: function(){
+        logoText.stop().animate({
           left: -250
         }, 400);
-        logoHome.animate({
+        logoHome.stop().animate({
           left: 0,
           color: '#fff'
         }, 400);
-      }
-    )
-    logoHome.mouseout(
-      function() {
-        logoText.animate({
+      },
+      mouseleave: function(){
+        logoText.stop().animate({
           left: 0
         }, 400, function(){
           $(this).removeAttr('style');
         });
-        logoHome.animate({
+        logoHome.stop().animate({
           left: 250,
           color: '#ff0051'
         }, 400, function(){
           $(this).removeAttr('style');
         });
       }
-    )
+    }, logoText);
+
+    // logoText.mouseover(
+    //   function() {
+    //     logoText.animate({
+    //       left: -250
+    //     }, 400);
+    //     logoHome.animate({
+    //       left: 0,
+    //       color: '#fff'
+    //     }, 400);
+    //   }
+    // )
+    // logoHome.mouseout(
+    //   function() {
+    //     logoText.animate({
+    //       left: 0
+    //     }, 400, function(){
+    //       $(this).removeAttr('style');
+    //     });
+    //     logoHome.animate({
+    //       left: 250,
+    //       color: '#ff0051'
+    //     }, 400, function(){
+    //       $(this).removeAttr('style');
+    //     });
+    //   }
+    // )
   },
 
   buttonFade: function() {
@@ -65,6 +93,24 @@ var bakerHill = {
         });
       }
     );
+  },
+
+  featureFade: function(){
+    $(window).scroll( function(){
+      $('.feature-overlay').each( function(i){
+        var bottom_of_object = $(this).position().top + $(this).outerHeight();
+        var bottom_of_window = $(window).scrollTop() + $(window).height();
+        
+        /* Adjust the "200" to either have a delay or that the content starts fading a bit before you reach it  */
+        bottom_of_window = bottom_of_window + 200;  
+      
+        if( bottom_of_window > bottom_of_object ){
+          $(this).animate({'opacity':'1'},500);
+        } else if( bottom_of_window < bottom_of_object ){
+          $(this).animate({'opacity':'0'},500);
+        }
+      }); 
+    });
   }
 };
 

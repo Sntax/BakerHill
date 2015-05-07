@@ -35,6 +35,7 @@ a.button-light {
   text-align: center;
 }
 
+div.page,
 section.page {
   width: 1000px;
   margin: 0 auto;
@@ -67,6 +68,7 @@ h2.tagline {
 p.details {
   font-family: "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-weight: 400;
+  margin-bottom: 15px;
 }
 
 
@@ -95,11 +97,24 @@ section.header {
   color: #fff;
 }
 
+div.feature-overlay {
+  background-color: #fff;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+}
+
 div.logo {
   position: fixed;
   overflow: hidden;
   top: 10%;
   left: 5%;
+  height: 85px;
   width: 250px;
 }
 div.logo h1.logo-home {
@@ -149,7 +164,6 @@ section.page.about h2 {
   margin-bottom: 80px;
 }
 section.page.about p.details {
-  margin-bottom: 15px;
   text-align: center;
   width: 100%
 }
@@ -167,3 +181,44 @@ section.page.about p.details {
 /* ------ */
 /* Footer */
 /* ------ */
+
+footer {
+  width: 100%;
+  background-color: #ff0051;
+}
+
+footer div.page {
+  padding: 50px 0;
+}
+
+div.ft-contact {
+  width: 400px;
+  padding-left: 600px;
+  color: #fff;
+  margin: 0 auto;
+  text-align: right;
+}
+
+div.ft-contact strong {
+  font-size: 30px;
+}
+div.ft-contact ul {
+  list-style-type: none;
+}
+div.ft-contact ul li {
+  margin-top: 15px;
+  text-decoration: none;
+}
+div.ft-contact ul li a {
+  color: #fff;
+}
+
+div.copyright {
+  color: #fff;
+  font-size: 14px;
+  font-family: "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  text-align: right;
+  border-top: 1px solid #ff4d86;
+  padding-top: 50px;
+  margin-top: 50px;
+}
