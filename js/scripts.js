@@ -8,9 +8,9 @@
 var bakerHill = {
 
   init: function() {
-    bakerHill.logoSlide();
-    bakerHill.buttonFade();
-    bakerHill.smoothScroll();
+    // bakerHill.logoSlide();
+    // bakerHill.buttonFade();
+    // bakerHill.smoothScroll();
   },
 
   logoSlide: function() {

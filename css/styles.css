@@ -1,5 +1,5 @@
 /* ===================================================== */
-/* Component:                          Global stylesheet */
+/* Component:                          Global Stylesheet */
 /* Project Name:                      Baker Hill Digital */
 /* Project URL:                 www.bakerhilldigital.com */
 /* Author(s):       Andrew Hill - andrewjrhill@gmail.com */
@@ -9,164 +9,46 @@
 /* Globals */
 /* ------- */
 
-* {
-  margin: 0;
-  padding: 0;
+html,
+body {
+  height: 100%;
 }
-body,
-html {
-  background-color: #FFF;
-  font-family: "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-  font-weight: 100;
-}
-a {
-  text-decoration: none;
-}
-a:hover {
-  color: #fff;
-}
-
-a.button-light {
-  color: #ff0051;
-  background-color: #fff;
-  font-weight: 400;
-  padding: 20px 40px;
-  cursor: pointer;
-  text-align: center;
-}
-
-div.page,
-section.page {
-  width: 1000px;
-  margin: 0 auto;
-  font-family: 'Droid Serif', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-  color: #393939;
-  clear: both;
-  padding: 100px 0;
-}
-
-span.blurb {
-  text-transform: uppercase;
-  font-size: 13px;
-  color: #ff0051;
-  letter-spacing: 3px;
-  text-align: center;
-  display: block;
-  font-weight: 600;
-}
-h1.heading {
-  text-align: center;
-  font-size: 60px;
-  margin-top: 30px;
-  margin-bottom: 50px;
-}
-h2.tagline {
-  font-size: 20px;
-  text-align: center;
-  font-weight: 200;
-}
-p.details {
-  font-family: "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-  font-weight: 400;
-  margin-bottom: 15px;
-}
-
 
 /* ---------- */
 /* Navigation */
 /* ---------- */
-nav.global-nav {
-  color: #fff;
-}
 
 
 /* ------ */
 /* Header */
 /* ------ */
-section.header {
-  clear: both;
-  display: inline-block;
-  background: url(../img/background-bw.jpg) no-repeat center center fixed; 
-  background-color: #303030;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100vh;
-  width: 100%;
-  color: #fff;
-}
 
-div.feature-overlay {
-  background-color: #fff;
-  height: 100vh;
+div.container.full-img {
+  background: url(../img/background-bw.jpg) no-repeat center center fixed;
+  max-width: 100%;
   width: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
+  height: 100%;
+  padding: 0;
 }
 
 div.logo {
-  position: fixed;
-  overflow: hidden;
-  top: 10%;
-  left: 5%;
   height: 85px;
-  width: 250px;
-}
-div.logo h1.logo-home {
-  text-transform: uppercase;
-  position: relative;
-  font-size: 18px;
-  color: #ff0051;
-  padding: 31px 0;
-  left: 250px;
-  top: -83px;
-}
-div.logo h1.logo-text {
-  position: relative;
-  left: 0;
 }
 div.logo h1 {
+  color: #fff;
   background-color: #ff0051;
-  width: 250px;
-  text-align: center;
-  font-family: "Ubuntu";
+  font-size: 3.8rem;
   font-weight: 600;
   cursor: pointer;
-  font-size: 38px;
-  padding: 20px 0;
-}
-
-h2.feature-text {
-  width: 50vw;
-  font-family: 'Droid Serif', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-  font-size: 46px;
-  margin: 20% auto 0 auto;
-  letter-spacing: 3px;
+  font-family: "Ubuntu";
   text-align: center;
+  padding: 20px;
 }
-
-a.page-header-button {
-  margin: 150px auto 0 auto;
-  width: 100px;
-  display: block;
-}
-
 
 /* ------ */
 /* About */
 /* ----- */
-section.page.about h2 {
-  margin-bottom: 80px;
-}
-section.page.about p.details {
-  text-align: center;
-  width: 100%
-}
+
 
 /* -------- */
 /* Services */
@@ -182,43 +64,3 @@ section.page.about p.details {
 /* Footer */
 /* ------ */
 
-footer {
-  width: 100%;
-  background-color: #ff0051;
-}
-
-footer div.page {
-  padding: 50px 0;
-}
-
-div.ft-contact {
-  width: 400px;
-  padding-left: 600px;
-  color: #fff;
-  margin: 0 auto;
-  text-align: right;
-}
-
-div.ft-contact strong {
-  font-size: 30px;
-}
-div.ft-contact ul {
-  list-style-type: none;
-}
-div.ft-contact ul li {
-  margin-top: 15px;
-  text-decoration: none;
-}
-div.ft-contact ul li a {
-  color: #fff;
-}
-
-div.copyright {
-  color: #fff;
-  font-size: 14px;
-  font-family: "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-  text-align: right;
-  border-top: 1px solid #ff4d86;
-  padding-top: 50px;
-  margin-top: 50px;
-}

@@ -1,0 +1,13 @@
+/* ===================================================== */
+/* Component:                      Responsive Stylesheet */
+/* Project Name:                      Baker Hill Digital */
+/* Project URL:                 www.bakerhilldigital.com */
+/* Author(s):       Andrew Hill - andrewjrhill@gmail.com */
+/* ===================================================== */
+
+@media (min-width: 550px) {
+
+  div.logo { min-width: 35rem; }
+  div.logo h1 { margin: 6rem 6rem 0 6rem; }
+
+}
