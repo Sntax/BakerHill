@@ -8,42 +8,44 @@
 var bakerHill = {
 
   init: function() {
-    // bakerHill.logoSlide();
+    bakerHill.logoSlide();
     // bakerHill.buttonFade();
-    // bakerHill.smoothScroll();
+    bakerHill.smoothScroll();
   },
 
   logoSlide: function() {
 
-    var logoText = $('div.logo h1.logo-text');
-    var logoHome = $('div.logo h1.logo-home');
+    var primaryElement = $('div.logo h1.slide-first');
+    var primaryElementWidth = primaryElement.width();
+    var secondaryElement = $('div.logo h1.slide-second');
+    var secondaryElementWidth = secondaryElement.width();
 
     $('.feature-overlay').hide();
 
-    $('div.logo').on({
+    $('div.logo h1').on({
       mouseenter: function(){
-        logoText.stop().animate({
-          left: -250
+        primaryElement.stop().animate({
+          left: -primaryElementWidth
         }, 400);
-        logoHome.stop().animate({
+        secondaryElement.stop().animate({
           left: 0,
           color: '#fff'
         }, 400);
       },
       mouseleave: function(){
-        logoText.stop().animate({
+        primaryElement.stop().animate({
           left: 0
         }, 400, function(){
           $(this).removeAttr('style');
         });
-        logoHome.stop().animate({
-          left: 250,
+        secondaryElement.stop().animate({
+          left: primaryElementWidth,
           color: '#ff0051'
         }, 400, function(){
           $(this).removeAttr('style');
         });
       }
-    }, logoText);
+    }, primaryElement);
   },
 
   buttonFade: function() {

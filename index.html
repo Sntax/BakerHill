@@ -36,8 +36,8 @@
     <!-- Stylesheets -->
     <link href="css/dist/normalize.css" rel="stylesheet" type="text/css"/>
     <link href="css/dist/skeleton.css" rel="stylesheet" type="text/css"/>
-    <link href="css/styles.css" rel="stylesheet" type="text/css"/>
     <link href="css/responsive-styles.css" rel="stylesheet" type="text/css"/>
+    <link href="css/styles.css" rel="stylesheet" type="text/css"/>
 
     <!-- Custom Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
@@ -48,10 +48,16 @@
   </head>
   <body>
     <div class="container full-img">
-      <div class="logo two columns">
-        <h1 class="logo-text smooth-scroll" data-loc="header">Baker Hill</h1>
-        <!-- <h1 class="logo-home smooth-scroll" data-loc="header">Home</h1> -->
-      </div>
+        <div class="logo two columns">
+            <h1 class="mobile-only smooth-scroll hidden" data-loc="header">Baker Hill</h1>
+            <h1 class="slide-first smooth-scroll" data-loc="header">Baker Hill</h1>
+            <h1 class="slide-second smooth-scroll" data-loc="header">Home</h1>
+        </div>
+        <div class="row">
+            <div class="tagline twelve columns">
+                <h1>A digital agency to transform the <br/>future of your business.</h1>
+            </div>
+        </div>
     </div>
     
     <!-- Scripts -->

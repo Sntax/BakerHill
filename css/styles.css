@@ -13,6 +13,9 @@ html,
 body {
   height: 100%;
 }
+.hidden {
+  display: none;
+}
 
 /* ---------- */
 /* Navigation */
@@ -33,16 +36,40 @@ div.container.full-img {
 
 div.logo {
   height: 85px;
+  overflow: hidden;
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+  width: 27rem !important;
 }
 div.logo h1 {
   color: #fff;
+  width: 23rem;
   background-color: #ff0051;
   font-size: 3.8rem;
   font-weight: 600;
   cursor: pointer;
   font-family: "Ubuntu";
   text-align: center;
-  padding: 20px;
+  padding: 2rem;
+  position: absolute;
+}
+div.logo h1.slide-second {
+  width: 23rem;
+  left: 27rem;
+  top: 0px;
+}
+
+div.tagline h1 {
+  font-family: 'Droid Serif', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 600;
+  line-height: 7rem;
+  color: #fff;
+  position: absolute;
+  top: 38%;
+  text-align: center;
+  margin: 0 5%;
+  width: 95%;
 }
 
 /* ------ */
