@@ -7,12 +7,14 @@
 
 var bakerHill = {
 
+  // Initialize all functions.
   init: function() {
     bakerHill.logoSlide();
-    // bakerHill.buttonFade();
+    bakerHill.fancyButton();
     bakerHill.smoothScroll();
   },
 
+  // Slides between BakerHill Logo and Home button on mouse over.
   logoSlide: function() {
 
     var primaryElement = $('div.logo h1.slide-first');
@@ -48,8 +50,9 @@ var bakerHill = {
     }, primaryElement);
   },
 
-  buttonFade: function() {
-    $('.button-light').mouseover(
+  // Changes colors on fancy buttons.
+  fancyButton: function() {
+    $('.fancy-button').mouseover(
       function() {
         $(this).stop().animate({
           backgroundColor: '#ff0051',

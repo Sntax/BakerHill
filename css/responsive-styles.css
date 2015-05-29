@@ -7,6 +7,10 @@
 
 @media (max-width: 330px) {
 
+  div.button-container {
+    display: none;
+  }
+
   div.logo h1.slide-first,
   div.logo h1.slide-second {
     display: none;
@@ -19,8 +23,8 @@
 
   div.tagline h1 {
     font-size: 3.5rem;
-    line-height: 5rem;
-    margin: 18rem 4rem !important;
+    line-height: 5rem !important;
+    margin: 18rem 4rem 0 4rem !important;
     width: 26rem !important;
     text-align: left !important;
     top: 0px !important;
