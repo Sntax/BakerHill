@@ -34,66 +34,67 @@
     <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/96x96.png">
 
     <!-- Stylesheets -->
+    <link href="css/dist/normalize.css" rel="stylesheet" type="text/css"/>
+    <link href="css/dist/skeleton.css" rel="stylesheet" type="text/css"/>
+    <link href="css/responsive-styles.css" rel="stylesheet" type="text/css"/>
     <link href="css/styles.css" rel="stylesheet" type="text/css"/>
 
     <!-- Custom Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
-
     <!-- Google Analytics Tracking -->
     <!-- TODO: Include Google Analytics Here -->
   </head>
   <body>
-    <main class="container">
-      <section class="header" id="header">
-        <div class="logo">
-          <h1 class="logo-text">Baker Hill</h1>
-          <h1 class="logo-home smooth-scroll" data-loc="header">Home</h1>
+    <div class="fullscreen-background">
+        <div id="landing" class="container">
+            <div class="logo two columns">
+                <h1 class="mobile-only smooth-scroll hidden" data-loc="landing">Baker Hill</h1>
+                <h1 class="slide-first smooth-scroll" data-loc="landing">Baker Hill</h1>
+                <h1 class="slide-second smooth-scroll" data-loc="landing">Home</h1>
+            </div>
+            <div class="row">
+                <div class="tagline twelve columns">
+                    <h1>A digital agency to transform the <br/>future of your business.</h1>
+                </div>
+                <div class="twelve columns button-container">
+                    <a class="fancy-button smooth-scroll" data-loc="about">Read More</a>
+                </div>
+            </div>
         </div>
-<!--         <nav class="global-nav">
-          <ul>
-            <li>about</li>
-            <li>services</li>
-            <li>contact us</li>
-          </ul>
-        </nav> -->
-        <h2 class="feature-text">A digital agency to transform the future of your business.</h2>
-        <a href="#" class="button-light page-header-button smooth-scroll" data-loc="about">Read More</a>
-        <div class="feature-overlay">&nbsp;</div>
-      </section>
-      <section class="page about" id="about">
-        <span class="blurb">Envision. Execute. Excel.</span>
-        <h1 class="heading">We are Baker Hill</h1>
-        <h2 class="tagline">Driving creative momentum to accelerate your organisation.</h2>
-        <p class="details">
-          We craft beautiful, functional websites for all devices in a technology driven world. 
-        </p>
-        <p class="details">
-          To translate your organisations' vision into a striking comprehensive digital presence.
-        </p>
-        <p class="details">
-          From SEO to social media we execute a powerful future for your business. 
-        </p>
-      </section>
-      <footer>
-        <div class="page">
-          <div class="ft-contact">
-            <strong>Contact Us</strong>
-            <ul>
-              <li><a href="mailto:info@bakerhilldigital.com">info@bakerhilldigital.com</a></li>
-              <li>Sean: 079.604.2494</li>
-              <li>Andrew: 060.929.6323</li>
-            </ul>
-          </div>
-          <div class="copyright">Copyright © Baker Hill Digital. All Rights Reserved.</div>
+    </div>
+    <div id="about" class="container">
+        <div class="row">
+            <div class="twelve columns">
+                <span class="blurb">Envision. Execute. Excel.</span>
+                <h1>We are Baker Hill</h1>
+                <h2>Driving creative momentum to accelerate your organisation.</h2>
+                <p>We craft beautiful, functional websites for all devices in a technology driven world.</p>
+                <p>To translate your organisations' vision into a striking comprehensive digital presence.</p>
+                <p>From SEO to social media we can help move your business towards a strong future.</p>
+            </div>
         </div>
-      </footer>
-    </main>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="twelve columns contact">
+                    <strong>Contact Us</strong>
+                    <ul>
+                        <li><a href="mailto:info@bakerhilldigital.com">info@bakerhilldigital.com</a></li>
+                        <li>Sean: 079.604.2494</li>
+                        <li>Andrew: 060.929.6323</li>
+                    </ul>
+                    <div class="copyright">Copyright © Baker Hill Digital. All Rights Reserved.</div>
+                </div>
+            </div>
+        </div>
+    </footer>
     
     <!-- Scripts -->
-    <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
-    <script src="js/jquery.color-2.1.2.min.js" type="text/javascript"></script>
+    <script src="js/dist/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="js/dist/jquery.color-2.1.2.min.js" type="text/javascript"></script>
     <script src="js/scripts.js" type="text/javascript"></script>
   </body>
 </html>
