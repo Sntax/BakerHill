@@ -78,7 +78,7 @@ div.tagline h1 {
   line-height: 7rem;
   color: #fff;
   text-align: center;
-  margin: 19% 5% 0 5%;
+  margin: 360px 5% 0 5%;
   width: 95%;
 }
 
@@ -86,6 +86,39 @@ div.tagline h1 {
 /* About */
 /* ----- */
 
+div#about {
+  font-family: 'Droid Serif', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  padding: 100px 0;
+}
+div#about span {
+  text-transform: uppercase;
+  font-size: 13px;
+  display: block;
+  color: #ff0051;
+  letter-spacing: 3px;
+  text-align: center;
+  font-weight: 600;
+}
+div#about h1 {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-weight: 600;
+  color: #393939;
+}
+div#about h2 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 200;
+  margin-bottom: 80px;
+}
+div#about p {
+  text-align: center;
+  width: 100%;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
 
 /* -------- */
 /* Services */
@@ -100,3 +133,35 @@ div.tagline h1 {
 /* ------ */
 /* Footer */
 /* ------ */
+
+footer {
+  font-family: 'Droid Serif', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  background-color: #ff0051;
+  width: 100%;
+  padding: 50px 0;
+  color: #fff;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+footer div.contact {
+  text-align: right;
+  width: 80%;
+}
+footer div.contact strong {
+  font-size: 30px;
+}
+footer div.contact ul li {
+  margin-top: 15px;
+  text-decoration: none;
+  list-style-type: none;
+}
+footer div.contact div.copyright {
+  font-size: 14px;
+  font-family: "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  text-align: right;
+  border-top: 1px solid #ff4d86;
+  padding-top: 50px;
+  margin-top: 50px;
+}
