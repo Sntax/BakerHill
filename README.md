@@ -10,3 +10,4 @@ The Baker Hill website makes use of the following technologies:
 
 * [jQuery](http://jquery.com/download/)
 * [jQuery Color](https://code.jquery.com/color/)
+* [Skeleton Boilerplate](http://getskeleton.com/)
