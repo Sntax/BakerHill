@@ -10,7 +10,6 @@ var bakerHill = {
   // Initialize all functions.
   init: function() {
     bakerHill.logoSlide();
-    bakerHill.fancyButton();
     bakerHill.smoothScroll();
   },
 
@@ -51,27 +50,27 @@ var bakerHill = {
   },
 
   // Changes colors on fancy buttons.
-  fancyButton: function() {
-    $('.fancy-button').mouseover(
-      function() {
-        $(this).stop().animate({
-          backgroundColor: '#ff0051',
-          color: '#fff',
-          width: '115px'
-        }, 250);
-      }
-    ).mouseout(
-      function() {
-        $(this).stop().animate({
-          backgroundColor: '#fff',
-          color: '#ff0051',
-          width: '100px'
-        }, 250, function(){
-          $(this).removeAttr('style');
-        });
-      }
-    );
-  },
+  // fancyButton: function() {
+  //   $('.fancy-button').mouseover(
+  //     function() {
+  //       $(this).stop().animate({
+  //         backgroundColor: '#ff0051',
+  //         color: '#fff',
+  //         width: '115px'
+  //       }, 250);
+  //     }
+  //   ).mouseout(
+  //     function() {
+  //       $(this).stop().animate({
+  //         backgroundColor: '#fff',
+  //         color: '#ff0051',
+  //         width: '100px'
+  //       }, 250, function(){
+  //         $(this).removeAttr('style');
+  //       });
+  //     }
+  //   );
+  // },
 
   smoothScroll: function() {
 

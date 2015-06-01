@@ -5,81 +5,43 @@
 /* Author(s):       Andrew Hill - andrewjrhill@gmail.com */
 /* ===================================================== */
 
-@media (max-width: 1024px) {
-
-  div#landing div.tagline h1 {
-    font-size: 4.5rem;
-  }
-}
-
-@media (max-width: 915px) {
-
-  div#landing div.tagline h1 {
-    font-size: 4rem;
-  }
-}
-
-@media (max-width: 810px) {
-
-  div#landing div.tagline h1 {
-    font-size: 3.4rem;
-  }
-}
-
-@media (max-width: 685px) {
-
-  div#landing div.tagline h1 {
-    font-size: 3rem;
-  }
-}
-
-@media (max-width: 605px) {
-
-  div#landing div.tagline h1 {
-    font-size: 2.6rem;
-  }
-}
-
-@media (max-width: 490px) {
-
-  div#landing div.tagline h1 {
-    font-size: 2.4rem;
-  }
-}
-
-@media (max-width: 450px) {
-
-  div#landing div.tagline h1 {
-    font-size: 2.1rem;
-  }
-}
-
 @media (max-width: 330px) {
 
-  div#landing div.button-container {
-    display: none;
+  div#landing {
+    padding: 25px 0 0 0 !important;
   }
-
   div#landing div.logo {
     left: 50%;
     margin-left: -13.5rem;
   }
-
   div#landing div.logo h1.slide-first,
   div#landing div.logo h1.slide-second {
     display: none;
   }
-
   div#landing div.logo h1.mobile-only {
     display: inherit;
   }
-
   div#landing div.tagline h1 {
-    font-size: 3.5rem;
+    font-size: 3.6rem !important;
     line-height: 5rem !important;
-    margin: 18rem 4rem !important;
-    width: 26rem !important;
+    margin-top: 13rem !important;
     text-align: left !important;
     top: 0px !important;
+  }
+
+  div#about h1 {
+    font-size: 54px !important;
+  }
+  div#about p {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 760px) {
+
+  div#landing div.tagline h1 {
+    line-height: 6rem;
+    margin-top: 40%;
+    font-size: 4rem;
   }
 }
