@@ -25,7 +25,7 @@
     font-size: 3.6rem !important;
     line-height: 5rem !important;
     margin-top: 13rem !important;
-    text-align: left !important;
+    text-align: center !important;
     top: 0px !important;
   }
 
@@ -35,6 +35,17 @@
   div#about p {
     font-size: 14px !important;
   }
+
+  footer {
+    text-align: center !important;
+  }
+  footer div.contact {
+    width: inherit !important;
+    text-align: center !important;
+  }
+  footer div.contact div.copyright {
+    text-align: center !important;
+  }
 }
 
 @media (max-width: 760px) {
@@ -43,5 +54,17 @@
     line-height: 6rem;
     margin-top: 40%;
     font-size: 4rem;
+  }
+}
+
+/* iPhone 4 */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+  div#landing div.tagline h1 {
+    font-size: 3.5rem !important;
   }
 }
