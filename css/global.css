@@ -1,0 +1,239 @@
+/* ===================================================== */
+/* Page:                                         Globals */
+/* Component:                                 Stylesheet */
+/* Project Name:                      Baker Hill Digital */
+/* Project URL:                 www.bakerhilldigital.com */
+/* Author(s):       Andrew Hill - andrewjrhill@gmail.com */
+/* ===================================================== */
+
+
+/* ==================== */
+/*     BROWSER RESET    */
+/* ==================== */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-family: "HelveticaNeue", "Helvetica Neue", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  text-decoration: none;
+  background-color: rgba(255, 0, 81, 0.9);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Droid Serif', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+}
+h2 {
+  font-size: 60px;
+  font-weight: 600;
+}
+h4 {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+
+/* ==================== */
+/*      COMPONENTS      */
+/* ==================== */
+
+.hide {
+  display: none;
+}
+.clear {
+  content: "";
+  display: table;
+  clear: both;
+}
+a.button {
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 120px;
+  display: block;
+  width: 95px;
+  text-transform: uppercase;
+  padding: 20px;
+  border: 3px solid rgba(255, 0, 81, 1);
+  background-color: rgba(255, 0, 81, 0.5);
+  color: rgba(248, 248, 248, 1);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+a.button:hover{
+  background-color: rgba(255, 0, 81, 1);
+  border: 3px solid rgba(255, 0, 81, 1);
+  color: rgba(255, 255, 255, 1);
+  font-weight: bolder;
+}
+.deco-line {
+  display: inline-block;
+  background-color: rgba(255, 0, 81, 1);
+  width: 150px;
+  height: 5px;
+  margin: 30px 0;
+}
+.smooth-scroll {
+  cursor: pointer;
+}
+.text-highlight {
+  color: rgba(255, 0, 81, 1);
+  text-shadow: 2px 2px rgba(33, 33, 33, 0.5);
+}
+
+/* ==================== */
+/*      NAVIGATION      */
+/* ==================== */
+
+.navigation .mobile {
+  display: none;
+}
+.navigation {
+  min-width: 961px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  height: 120px;
+  border-top: 5px solid rgba(187, 16, 55, 1);
+  background-color: rgba(255, 0, 81, 0);
+}
+.navigation .wrapper {
+  max-width: 1170px;
+  padding: 40px 75px 0 75px;
+  margin: 0 auto;
+}
+.navigation .logo {
+  float: left;
+  font-size: 24px;
+  display: block;
+  text-transform: none;
+  font-family: "Ubuntu";
+  font-weight: 600;
+  font-size: 38px;
+}
+.logo a {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+.navigation .contact a {
+  border: 3px solid rgba(255, 0, 81, 1);
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  color: rgba(255, 255, 255, 1) !important;
+  font-weight: bold;
+  margin-top: -10px;
+  padding: 10px 20px;
+  width: 190px;
+}
+.navigation .contact a:hover {
+  background-color: rgba(255, 0, 81, 0.3);
+  color: rgba(40, 62, 86, 1);
+  font-weight: bolder;
+}
+.navigation .desktop {
+  float: right;
+}
+.navigation .desktop ul {
+  margin: 12px 0 0 0;
+  padding: 0;
+}
+.navigation .desktop li {
+  float: left;
+  list-style-type: none;
+  color: rgba(255, 255, 255, 1);
+  margin: 0 25px;
+}
+.navigation .desktop li.contact-us {
+  margin-right: 0;
+}
+.navigation .desktop li a {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+
+/* ==================== */
+/*        LIMIT         */
+/* ==================== */
+.limit {
+  width: 100%;
+}
+
+
+/* ==================== */
+/*        SPACER        */
+/* ==================== */
+
+.spacer {
+  margin: auto;
+  text-align: left;
+  width: 100%;
+  max-width: 1170px;
+}
+
+
+/* ==================== */
+/*      CONTACT US      */
+/* ==================== */
+
+
+.half-left,
+.half-right {
+  width: 50%;
+  float: left;
+}
+
+/* ==================== */
+/*        FOOTER        */
+/* ==================== */
+
+.footer {
+  padding: 50px 75px 20px 75px;
+  color: rgba(255, 255, 255, 1);
+  border-top: 5px solid rgba(187, 16, 55, 1);
+  background-color: rgba(255, 0, 81, 1);
+}
+.footer .logo {
+  float: left;
+  font-size: 28px;
+  font-family: "Ubuntu";
+  font-weight: bold;
+  display: block;
+  text-transform: none;
+  padding-bottom: 20px;
+}
+.footer .affiliates {
+  float: right;
+}
+.footer .affiliates li {
+  float: left;
+  font-size: 13px;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0 0 20px 30px ;
+}
+.footer .affiliates li a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+}
+.footer .copyright {
+  float: left;
+  width: 100%;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 1);
+  text-align: right;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+  font-size: 12px;
+}

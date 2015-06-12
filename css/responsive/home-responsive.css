@@ -1,0 +1,131 @@
+/* ===================================================== */
+/* Page:                                       Home Page */
+/* Component:                      Responsive Stylesheet */
+/* Project Name:                      Baker Hill Digital */
+/* Project URL:                 www.bakerhilldigital.com */
+/* Author(s):       Andrew Hill - andrewjrhill@gmail.com */
+/* ===================================================== */
+
+@media screen and (max-width: 960px) {
+
+
+  /* ==================== */
+  /*     INTRODUCTION     */
+  /* ==================== */
+
+  .intro {
+    padding: 180px 40px 40px 40px;
+  }
+  .intro h2 {
+    font-size: 25px;
+  }
+  .intro h2 span.point-out {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 50px !important;
+  }
+  .intro h2 span.point-out i {
+    font-size: 30px !important;
+  }
+  .intro .button {
+    margin: 30px auto 0 auto !important;
+  }
+
+
+  /* ==================== */
+  /*       WE ARE         */
+  /* ==================== */
+
+  .we-are {
+    padding: 40px;
+  }
+  .we-are h2 {
+    font-size: 40px;
+  }
+  .we-are h4 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .we-are .button {
+    margin: 30px auto 0 auto !important;
+  }
+
+  /* ==================== */
+  /*      SERVICES        */
+  /* ==================== */
+
+  .services {
+    padding: 40px;
+  }
+  .services h2 {
+    font-size: 31px;
+  }
+  .services .deco-line {
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+  .services .tabs-desktop {
+    display: none !important;
+  }
+  .services ul.tabs-mobile {
+    display: inherit !important;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .services ul.tabs-mobile li {
+    border-top: 2px solid #ebecf2;
+    border-left: 2px solid #ebecf2;
+    border-right: 2px solid #ebecf2;
+    background-color: #fff;
+    padding: 10px;
+  }
+  .services .tabs-content ul.services-list {
+    text-align: left !important;
+    padding-left: 17px !important;
+  }
+
+
+  /* ==================== */
+  /*        TABS          */
+  /* ==================== */
+
+  .tabs-mobile li:hover {
+    cursor: pointer;
+    background-color: #ebecf2 !important;
+  }
+  .tabs-content {
+    margin-top: 0 !important;
+    border-top: 2px solid #ebecf2;
+    padding: 30px 15px !important;
+    text-align: center;
+  }
+  .tabs-content h3 {
+    font-size: 20px !important;
+  }
+  .tabs-content .button {
+    width: 160px !important;
+    margin: 0 auto;
+  }
+
+
+  /* ==================== */
+  /*     CONTACT US       */
+  /* ==================== */
+
+  .contact-us {
+    padding: 40px;
+  }
+  .contact-us h2 {
+    font-size: 37px;
+  }
+  .contact-us .half-left,
+  .contact-us .half-right {
+    width: 100% !important;
+    float: none !important;
+    text-align: center;
+  }
+  .contact-us .half-right {
+    padding-top: 70px;
+  }
+}

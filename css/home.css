@@ -1,0 +1,239 @@
+/* ===================================================== */
+/* Page:                                       Home Page */
+/* Component:                                 Stylesheet */
+/* Project Name:                      Baker Hill Digital */
+/* Project URL:                 www.bakerhilldigital.com */
+/* Author(s):       Andrew Hill - andrewjrhill@gmail.com */
+/* ===================================================== */
+
+
+/* ==================== */
+/*     INTRODUCTION     */
+/* ==================== */
+
+.intro {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(57, 57, 57, 1);
+  background-image: url('../img/background/home-main-compressed.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 110%;
+  padding: 235px 75px 110px 75px;
+  min-height: 550px;
+}
+.intro h2 span.point-out {
+  font-size: 60px;
+  padding-bottom: 50px;
+  line-height: 5rem;
+  display: block;
+  font-weight: 600;
+}
+.intro h2 span.point-out i {
+  font-size: 63px;
+}
+.intro h2 {
+  line-height: 3rem;
+  font-weight: 400;
+  font-size: 40px;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+}
+.intro p {
+  line-height: 25px;
+  max-width: 800px;
+  padding-bottom: 30px;
+}
+.intro a.button {
+  width: 175px;
+}
+
+
+/* ==================== */
+/*        WE ARE        */
+/* ==================== */
+
+.we-are {
+  color: rgba(57, 57, 57, 1);
+  background-color: rgba(255, 255, 255, 1);
+  padding: 90px 75px;
+}
+.we-are p {
+  line-height: 35px;
+  margin-top: 60px;
+}
+.we-are a.button {
+  width: 205px;
+  margin: 80px 0 0 0;
+  border: 3px solid rgba(255, 0, 81, 1);
+  background-color: rgba(255, 0, 81, 1);
+  color: rgba(248, 248, 248, 1);
+}
+a.button:hover{
+  background-color: rgb(187, 16, 55);
+  border: 3px solid rgba(255, 0, 81, 1);
+  color: rgba(255, 255, 255, 1);
+  font-weight: bolder;
+}
+
+
+/* ==================== */
+/*       SERVICES       */
+/* ==================== */
+
+.services {
+  color: rgba(57, 57, 57, 1);
+  background-color: rgba(241, 241, 241, 1);
+  padding: 75px;
+}
+.services h2 {
+  padding-bottom: 10px;
+}
+.services .deco-line {
+  margin-bottom: 50px;
+}
+.services p {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+
+/* ==================== */
+/*        TABS          */
+/* ==================== */
+
+.services .tabs-mobile {
+  display: none;
+}
+.services .tabs-desktop {
+  display: inline-block;
+}
+.services ul.tabs-desktop {
+  width: 100%;
+  margin: 0;
+  max-width: 1170px;
+  list-style-type: none;
+  padding: 0;
+}
+.services ul.tabs-desktop li {
+  cursor: pointer;
+  float: left;
+  border-left: 2px solid rgba(235, 236, 242, 1);
+  border-bottom: 2px solid rgba(235, 236, 242, 1);
+  text-align: center;
+  width: 176px;
+  padding: 30px 10px;
+  background-color: rgba(250, 250, 253, 1);
+  font-weight: 700;
+}
+.services ul.tabs-desktop li.last {
+  border-right: 2px solid rgba(235, 236, 242, 1);
+}
+.services ul.tabs-desktop li.active.last {
+  border-left: 2px solid rgba(235, 236, 242, 1);
+  border-right: 2px solid rgba(235, 236, 242, 1);
+  border-bottom: 2px solid rgba(255, 255, 255, 1);
+}
+.services ul.tabs-desktop li.active {
+  border-top: 2px solid rgba(235, 236, 242, 1);
+  border-bottom: 2px solid rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(255, 0, 81, 1);
+}
+.services ul.tabs-desktop li svg {
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-align: center;
+  padding-bottom: 30px;
+  margin: 0 auto;
+}
+.services ul.tabs-desktop li.active #canvas-for-livicon-2 {
+  fill: rgba(255, 0, 81, 1);
+}
+.services ul.tabs-desktop li a {
+  display: block;
+}
+.services div.tabs-content {
+  display: none;
+  background-color: rgba(255, 255, 255, 1);
+  border-right: 2px solid rgba(235, 236, 242, 1);
+  border-bottom: 2px solid rgba(235, 236, 242, 1);
+  border-left: 2px solid rgba(235, 236, 242, 1);
+  padding: 50px 80px;
+  margin-top: -6px;
+}
+.services div.tabs-content .visible {
+  opacity: 1;
+}
+.services div.tabs-content .not-visible {
+  opacity: 0;
+}
+.services div.tabs-content.active {
+  display: inherit;
+}
+.services div.tabs-content h3 {
+  font-size: 30px;
+}
+.services div.tabs-content p {
+  text-align: left;
+  line-height: 30px;
+  max-width: none;
+  margin: 30px 0 0 0;
+}
+.services div.tabs-content ul.services-list {
+  margin-top: 0;
+}
+.services div.tabs-content ul.services-list li {
+  margin-top: 10px;
+}
+.services a.button {
+  width: 175px;
+  margin-top: 40px;
+  border: 3px solid rgba(255, 0, 81, 1);
+  background-color: rgba(255, 0, 81, 1);
+  color: rgba(248, 248, 248, 1);
+}
+.services a.button:hover{
+  background-color: rgb(187, 16, 55);
+  border: 3px solid rgba(255, 0, 81, 1);
+  color: rgba(255, 255, 255, 1);
+  font-weight: bolder;
+}
+
+
+/* ==================== */
+/*     CONTACT US       */
+/* ==================== */
+
+.contact-us {
+  padding: 75px;
+  background-color: rgba(57, 57, 57, 1);
+  color: rgba(255, 255, 255, 1);
+}
+.contact-us h4 {
+  line-height: 34px;
+}
+.contact-us .half-right {
+  text-align: right;
+  padding-top: 140px;
+}
+.contact-us .half-right p {
+  font-family: 'Droid Serif', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  margin: 0;
+}
+.contact-us .half-right p span {
+  color: rgba(153, 153, 153, 1);
+}
+.contact-us .half-right p.andrew,
+.contact-us .half-right p.email {
+  margin-top: 10px;
+}
+.contact-us a {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+.contact-us p.andrew a {
+  cursor: help;
+}

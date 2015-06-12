@@ -1,0 +1,108 @@
+/* ===================================================== */
+/* Page:                                         Globals */
+/* Component:                      Responsive Stylesheet */
+/* Project Name:                      Baker Hill Digital */
+/* Project URL:                 www.bakerhilldigital.com */
+/* Author(s):       Andrew Hill - andrewjrhill@gmail.com */
+/* ===================================================== */
+
+@media screen and (max-width: 960px) {
+
+
+  /* ==================== */
+  /*      NAVIGATION      */
+  /* ==================== */
+
+  .navigation {
+    height: 150px;
+    width: 100%;
+    min-width: 100%;
+  }
+  .navigation .desktop {
+    display: none;
+  }
+  .navigation .mobile {
+    display: block;
+  }
+  .navigation .mobile ul {
+    background-color: rgba(255, 0, 81, 1);
+    margin: 0;
+    display: none;
+    padding: 5px 0;
+    list-style-type: none;
+    position: absolute;
+    width: 100%;
+    top: 120px;
+  }
+  .navigation .mobile li {
+    padding: 15px 0;
+    margin: 0 40px;
+    border-bottom: 1px solid rgba(187, 16, 55, 1);
+  }
+  .navigation .mobile .last {
+    border: none;
+  }
+  .navigation .mobile a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .navigation .wrapper {
+    padding: 13px 0 15px 0;
+    background-color: rgba(255, 0, 81, 0.9);
+  }
+  .navigation .wrapper .logo {
+    margin: 0 auto;
+    font-size: 30px !important;
+    text-align: center;
+    float: none !important;
+  }
+  .navigation .wrapper .mobile {
+    margin: 0 auto;
+    padding-top: 10px;
+    text-align: center;
+  }
+  .navigation .wrapper .button {
+    margin: 0 auto;
+    background-color: rgba(187, 16, 55, 1);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 0 12px 0;
+    width: 100px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+
+  /* ==================== */
+  /*        SPACER        */
+  /* ==================== */
+
+  .spacer {
+    text-align: center !important;
+  }
+
+
+  /* ==================== */
+  /*        FOOTER        */
+  /* ==================== */
+
+  .footer {
+    padding: 15px 40px 20px 40px;
+  }
+  .footer .affiliates {
+    display: none;
+  }
+  .footer .logo {
+    font-size: 18px;
+    float: none !important;
+  }
+  .footer .logo span {
+    display: none;
+  }
+  .footer .copyright {
+    text-align: center;
+  }
+}

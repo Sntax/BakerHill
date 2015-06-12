@@ -1,0 +1,64 @@
+/* ===================================================== */
+/* Component:                      Responsive Stylesheet */
+/* Project Name:                      Baker Hill Digital */
+/* Project URL:                 www.bakerhilldigital.com */
+/* Author(s):       Andrew Hill - andrewjrhill@gmail.com */
+/* ===================================================== */
+
+
+/* iPhone 4 */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  div#landing {
+    padding: 25px 0 0 0 !important;
+
+  div#landing div.tagline h1 {
+    font-size: 3rem !important;
+    line-height: 3rem !important;
+    padding-top: 50px !important;
+  }
+
+  footer {
+    text-align: center !important;
+  }
+  footer div.contact {
+    width: inherit !important;
+    text-align: center !important;
+  }
+  footer div.contact div.copyright {
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 330px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+  div#landing {
+    padding: 25px 0 0 0 !important;
+  }
+  div#landing div.logo {
+    left: 50%;
+    margin-left: -13.5rem;
+  }
+  div#landing div.logo h1.slide-first,
+  div#landing div.logo h1.slide-second {
+    display: none;
+  }
+  div#landing div.logo h1.mobile-only {
+    display: inherit;
+  }
+  div#landing div.tagline h1 {
+    font-size: 3.6rem !important;
+    line-height: 5rem !important;
+  }
+
+  div#about h1 {
+    font-size: 54px !important;
+  }
+  div#about p {
+    font-size: 14px !important;
+  }
+}
