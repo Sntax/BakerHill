@@ -17,7 +17,7 @@
   background-image: url('../img/background/home-main-compressed.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 110%;
+  background-size: cover;
   padding: 235px 75px 110px 75px;
   min-height: 550px;
 }

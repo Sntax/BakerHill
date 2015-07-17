@@ -17,7 +17,6 @@ var bakerHill = {
     );
     bakerHill.tabs($('.services ul li'));
     bakerHill.smoothScroll();
-    bakerHill.zoomBackgroundImage($('.intro'));
   }, 
 
   // Mobile navigation button and menu functionality.
@@ -30,7 +29,7 @@ var bakerHill = {
       $('.content').animate({
         marginTop: '320px'
       });
-    };
+    }
 
     // Closes hamburger menu.
     function closeHamburger(){
@@ -79,7 +78,7 @@ var bakerHill = {
               borderColor: 'rgba(187, 16, 55, 1)' },
             { duration: 600, queue: false }
           );
-        };
+        }
       } else {
         if (stickyNav.data('size') == 'small') {
           stickyNav.data('size', 'large');
@@ -89,7 +88,7 @@ var bakerHill = {
             { duration: 600,
               queue: false,
               complete: function() {
-                $(this).removeAttr('style')
+                $(this).removeAttr('style');
               }
             }
           );
@@ -98,7 +97,7 @@ var bakerHill = {
             { duration: 600,
               queue: false,
               complete: function() {
-                $(this).removeAttr('style')
+                $(this).removeAttr('style');
               }
             }
           );
@@ -108,7 +107,7 @@ var bakerHill = {
             { duration: 600,
               queue: false,
               complete: function() {
-                $(this).removeAttr('style')
+                $(this).removeAttr('style');
               }
             }
           );
@@ -128,7 +127,7 @@ var bakerHill = {
 
         // Adjust LivIcon SVG colors on click.
         tab.removeClass('active active-svg').find('path').attr('style', 'fill: #393939');
-        $(this).addClass('active active-svg').find('path').attr('style', 'fill: #ff0051');;
+        $(this).addClass('active active-svg').find('path').attr('style', 'fill: #ff0051');
 
         $('.tabs-content').removeClass('active');
         $('.visible').removeClass('visible').addClass('not-visible').removeAttr('style');
@@ -137,7 +136,7 @@ var bakerHill = {
           { duration: 700,
             queue: false,
             complete: function() { 
-              $(this).removeClass('not-visible').addClass('visible').removeAttr('style')
+              $(this).removeClass('not-visible').addClass('visible').removeAttr('style');
             }
           }
         );
@@ -153,7 +152,7 @@ var bakerHill = {
   // Smooth Scroll functionality.
   smoothScroll: function() {
 
-    $(document).scrollTop(0)
+    $(document).scrollTop(0);
     $('.smooth-scroll').on('click', function() {
 
       var clickedLink = $(this);
@@ -190,19 +189,7 @@ var bakerHill = {
         });
       }
     });
-  },
-
-  // Zoom fullscreen image on page load
-  zoomBackgroundImage: function(zoomElement) {
-
-    $(document).ready(
-      function(){
-        zoomElement.animate({
-          backgroundSize: '100%'
-        }, 2000, 'linear');
-      }
-    );
   }
-}
+};
 
 bakerHill.init();
